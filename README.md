@@ -25,15 +25,15 @@ There's a new set of product features being planned for [BLACK OPAL](https://q-c
 
 ### Requirements
 
-Create a web API using [Django](https://www.djangoproject.com/). The API should be backed by a [PostgreSQL](https://www.postgresql.org/) database, conform to the [JSON:API](https://jsonapi.org/) specification and should implement seven (7) API endpoints that provide the following functionality:
+Create a web API using [Django](https://www.djangoproject.com/). The API should be backed by a [PostgreSQL](https://www.postgresql.org/) database, conform to the [JSON:API](https://jsonapi.org/) specification and should implement API endpoints that provide the following functionality:
 
-- Create a new control
-- List all controls (five per page)
-- Get a specific control
-- Update a specific control
-- Delete a specific control
-- Bulk upload controls in CSV format
-- Download controls in CSV format
+1. Create a new control
+1. List all controls (five per page)
+1. Get a specific control
+1. Update a specific control
+1. Delete a specific control
+1. Bulk upload controls in CSV format
+1. Download controls in CSV format
 
 ### Additional Information
 
