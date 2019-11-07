@@ -14,7 +14,6 @@ The Q-CTRL Back-end Engineering Challenge is a way for applicants to roles withi
 
 - Read and understand [The Challenge](#the-challenge)
 - Create a solution that satisfies the [Requirements](#requirements)
-- Spend no more than two hours of actual coding time
 - Send the link to the repository containing your solution to careers@q-ctrl.com
 
 ## The Challenge
