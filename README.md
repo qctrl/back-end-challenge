@@ -2,6 +2,8 @@
 
 The Q-CTRL Back-end Engineering Challenge is a way for applicants to roles within the Q-CTRL Back-end Engineering team to demonstrate their skills and overall approach to back-end application development.
 
+The requirements are intentionally sparse (the devil is in the detail). We don't want you to do a lot, but what you do should be your best work and should clearly demonstrate you embody the [Three Virtues](http://threevirtues.com/).
+
 ## Table of Contents
 
 - [The Rules](#the-rules)
