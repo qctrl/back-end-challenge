@@ -26,7 +26,7 @@ At Q-CTRL, we use a suite of microservices to support our products. Typically, t
 
 ### Requirements
 
-1. Create a new service using the Python web framework of your choice (e.g. [Django](https://www.djangoproject.com/), [Flask](https://palletsprojects.com/p/flask/), etc.).
+1. Create a new service using the Python web framework of your choice (e.g. [Django](https://www.djangoproject.com/), [Flask](https://palletsprojects.com/p/flask/), [FastAPI](https://fastapi.tiangolo.com/), etc.).
 1. All dependencies should be captured in a `requirements.txt` file at the root of the repository.
 1. The service should expose a GraphQL endpoint at `/graphql`. 
 1. The GraphQL schema should consist of a single query, `person`, which must return a `Person` object.
