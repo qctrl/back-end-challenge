@@ -2,7 +2,7 @@
 
 The Q-CTRL Back-end Engineering Challenge is a way for applicants to roles within the Q-CTRL Back-end Engineering team to demonstrate their skills and overall approach to back-end application development.
 
-The requirements are intentionally sparse (the devil is in the detail). We don't want you to do a lot, but what you do should be your best work and should clearly demonstrate you embody the [Three Virtues](http://threevirtues.com/).
+The requirements are intentionally sparse to allow some flexibility. We don't want you to do a lot, but what you do should be your best work.
 
 ## Table of Contents
 
@@ -22,36 +22,33 @@ The requirements are intentionally sparse (the devil is in the detail). We don't
 
 ### Background
 
-There's a new set of product features being planned for [BLACK OPAL](https://q-ctrl.com/products/black-opal/) whereby a customer will be able to create and manage quantum controls. You can think of these controls as being the individual inputs a customer may employ to manipulate their quantum system using the [Q-CTRL App](https://app.q-ctrl.com/).
+At Q-CTRL, we use a suite of microservices to support our products. Typically, these microservices are written using a Python web framework and expose a [GraphQL](https://graphql.org/) API so clients and other services can communicate with it.
 
 ### Requirements
 
-Create a RESTful API using [Django](https://www.djangoproject.com/). The API should be backed by a [PostgreSQL](https://www.postgresql.org/) database, conform to the [JSON:API](https://jsonapi.org/) specification and should implement endpoints that provide the following functionality:
+1. Create a new service using the Python web framework of your choice (e.g. [Django](https://www.djangoproject.com/), [Flask](https://palletsprojects.com/p/flask/), etc.).
+1. All dependencies should be captured in a `requirements.txt` file at the root of the repository.
+1. The service should expose a GraphQL endpoint at `/graphql`. 
+1. The GraphQL schema should consist of a single query, `person`, which must return a `Person` object.
+   - A `Person` object should have the following fields: `email` (string), `name` (string), `address` (Address).
+   - An `Address` object should have the following fields: `number` (integer), `street` (string), `city` (string). 
 
-1. Create a new control
-1. List all controls (five per page)
-1. Get a specific control
-1. Update a specific control
-1. Delete a specific control
-1. Bulk upload controls in CSV format
-1. Download controls in CSV format
+### Validation
 
-### Additional Information
-
-Below are the attributes of a control. All attributes are required.
-
-| Name              | Description                                                                                                                     |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Name              | The name of the control (e.g. "Single-Qubit Driven").                                                                           |
-| Type              | Valid control types are Primitive, CORPSE, Gaussian, CinBB and CinSK.                                                           |
-| Maximum Rabi Rate | The maximum achievable angular frequency of the Rabi cycle for a driven quantum transition. This is a number between 0 and 100. |
-| Polar Angle       | An angle measured from the z-axis on the Bloch sphere. This is a number between 0 and 1 (units of pi).                          |
-
-The below assets have been provided to help complete the challenge.
-
-| Name                                | Description     |
-|-------------------------------------|-----------------|
-| [controls.csv](assets/controls.csv) | Sample CSV file |
+The following query will be used to validate your implementation:
+```
+query {
+  person {
+  	email
+  	name
+  	address {
+  	  number
+  	  street
+  	  city
+  	}
+  }
+}
+```
 
 ## Contributing
 
