@@ -14,9 +14,9 @@ The requirements are intentionally sparse to allow some flexibility. We don't wa
 
 ## The Rules
 
-- Read and understand [The Challenge](#the-challenge)
-- Create a solution that satisfies the [Requirements](#requirements)
-- Send the link to the repository containing your solution to careers@q-ctrl.com
+- Read and understand [The Challenge](#the-challenge).
+- Create a solution that satisfies the [Requirements](#requirements).
+- Send the link to the repository containing your solution to the person who contacted you.
 
 ## The Challenge
 
