@@ -39,13 +39,13 @@ The following query will be used to validate your implementation:
 ```
 query {
   person {
-  	email
-  	name
-  	address {
-  	  number
-  	  street
-  	  city
-  	}
+    email
+    name
+    address {
+      number
+      street
+      city
+    }
   }
 }
 ```
