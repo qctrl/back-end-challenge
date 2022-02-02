@@ -31,7 +31,9 @@ At Q-CTRL, we use a suite of microservices to support our products. Typically, t
 1. The service should expose a GraphQL endpoint at `/graphql`. 
 1. The GraphQL schema should consist of a single query, `person`, which must return a `Person` object.
    - A `Person` object should have the following fields: `email` (string), `name` (string), `address` (Address).
-   - An `Address` object should have the following fields: `number` (integer), `street` (string), `city` (string). 
+   - An `Address` object should have the following fields: `number` (integer), `street` (string), `city` (string), `state` (GraphQL enum). 
+
+**Note:** You can choose to return your own details or use mock values.
 
 ### Validation
 
@@ -45,6 +47,7 @@ query {
       number
       street
       city
+      state
     }
   }
 }
