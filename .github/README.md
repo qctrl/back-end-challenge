@@ -22,7 +22,7 @@ The requirements are intentionally sparse to allow some flexibility. We don't wa
 
 ### Background
 
-At Q-CTRL, we use a suite of microservices to support our products. Typically, these microservices are written using a Python web framework and expose a [GraphQL](https://graphql.org/) API so clients and other services can communicate with it.
+At Q-CTRL, we use a suite of microservices to support our products. Typically, these microservices are written using a Python web framework and expose a [GraphQL](https://graphql.org/) API so clients and other services can communicate with them.
 
 ### Requirements
 
