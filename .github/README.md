@@ -30,7 +30,7 @@ At Q-CTRL, we use a suite of microservices to support our products. Typically, t
 1. In your new repository, create a new service using the Python web framework of your choice (e.g. [Django](https://www.djangoproject.com/), [Flask](https://palletsprojects.com/p/flask/), [FastAPI](https://fastapi.tiangolo.com/), etc.).
 1. All dependencies should be captured in a `requirements.txt` file at the root of the repository.
 1. The service should expose a GraphQL endpoint at `/graphql`.
-1. The GraphQL schema should consist of a single query, `person`, which must return a `Person` object.
+1. The GraphQL schema should consist of a single query, `people`, which must return a list of `Person` objects.
    - A `Person` object should have the following fields: `email` (string), `name` (string), `address` (Address).
    - An `Address` object should have the following fields: `number` (integer), `street` (string), `city` (string), `state` (GraphQL enum).
 
@@ -41,7 +41,7 @@ At Q-CTRL, we use a suite of microservices to support our products. Typically, t
 The following query will be used to validate your implementation:
 ```
 query {
-  person {
+  people {
     email
     name
     address {
