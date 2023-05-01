@@ -64,4 +64,4 @@ See [Contributors](https://github.com/qctrl/back-end-challenge/graphs/contributo
 
 ## License
 
-See [LICENSE](LICENSE).
+See [LICENSE](https://github.com/qctrl/back-end-challenge/blob/master/LICENSE).
