@@ -26,7 +26,7 @@ At Q-CTRL, we use a suite of microservices to support our products. Typically, t
 
 ### Requirements
 
-1. Create a new GitHub repository under your account which will contain your solution. The new repository which you are going to create, should **not** be a fork of this repository and should **not** make any reference to "Q-CTRL" in the repository name, description, or code.
+1. Create a new GitHub repository under your account which will contain your solution. The new repository which you are going to create, **must not** be a fork of this repository and **must not** make any reference to "Q-CTRL" in the repository name, description, or code.
 1. In your new repository, create a new service using the Python web framework of your choice (e.g. [Django](https://www.djangoproject.com/), [Flask](https://palletsprojects.com/p/flask/), [FastAPI](https://fastapi.tiangolo.com/), etc.).
 1. All dependencies should be captured in a `requirements.txt` file at the root of the repository.
 1. The service should expose a GraphQL endpoint at `/graphql`.
