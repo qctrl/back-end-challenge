@@ -1,38 +1,38 @@
 # Q-CTRL Back-end Challenge
 
-The Q-CTRL Back-end Challenge is a way for applicants to roles within the Q-CTRL Back-end Engineering team, to demonstrate their skills and overall approach to back-end application development.
+The Q-CTRL Back-end Challenge is a way for applicants to roles within the Q-CTRL Back-end Engineering team to demonstrate their skills and overall approach to solving a challenge based upon a set of requirements.
 
-The requirements are intentionally sparse to allow some flexibility. We don't want you to do a lot, but what you do should be your best work.
-
-## Table of Contents
-
-  - [The Rules](#the-rules)
-  - [The Challenge](#the-challenge)
-  - [Contributing](#contributing)
-  - [Credits](#credits)
-  - [License](#license)
+The requirements are intentionally sparse (the devil is in the details). We don't want you to do a lot, but what you do should be your best work and should clearly demonstrate you embody [the three virtues](https://thethreevirtues.com/).
 
 ## The Rules
 
-- Read and understand [The Challenge](#the-challenge).
-- Create a solution that satisfies the [Requirements](#requirements).
-- Send the link to the repository containing your solution to the person who contacted you.
+- Read and understand [the challenge](#the-challenge).
+- Create a solution that satisfies [the requirements](#the-requirements).
+- Send a link to the repository containing your solution to the person who contacted you.
+
+**IMPORTANT:** The repository containing your solution must be public, must contain a `README.md` file, **MUST NOT** be a fork of this repository, and **MUST NOT** make any reference to "Q-CTRL" in the repository name, description, or code.
+
+**Note:** You should spend no more than three hours on this challenge.
 
 ## The Challenge
 
-### Background
-
 At Q-CTRL, we use a suite of microservices to support our products. Typically, these microservices are written using a Python web framework and expose a [GraphQL](https://graphql.org/) API so clients and other services can communicate with them.
 
-### Requirements
+## The requirements
 
-1. Create a new GitHub repository under your account which will contain your solution. The new repository which you are going to create, **must not** be a fork of this repository and **must not** make any reference to "Q-CTRL" in the repository name, description, or code.
-1. In your new repository, create a new service using the Python web framework of your choice (e.g. [Django](https://www.djangoproject.com/), [Flask](https://palletsprojects.com/p/flask/), [FastAPI](https://fastapi.tiangolo.com/), etc.).
-1. All dependencies should be captured in a `requirements.txt` file at the root of the repository.
-1. The service should expose a GraphQL endpoint at `/graphql`.
-1. The GraphQL schema should consist of a single query, `people`, which must return a list of `Person` objects.
-   - A `Person` object should have the following fields: `email` (string), `name` (string), `address` (Address).
-   - An `Address` object should have the following fields: `number` (integer), `street` (string), `city` (string), `state` (GraphQL enum).
+- Create a new service using your Python web framework of choice (e.g. [Django](https://www.djangoproject.com/), [Flask](https://palletsprojects.com/p/flask/), [FastAPI](https://fastapi.tiangolo.com/), etc.).
+- All dependencies should be captured in a `requirements.txt` file in the root of the repository.
+- The service should expose a GraphQL endpoint at `/graphql`.
+- The GraphQL schema should consist of a single query, `people`, which must return a list of `Person` objects.
+- The `Person` object should have the following fields:
+  - `email` (string).
+  - `name` (string).
+  - `address` (Address).
+- The `Address` object should have the following fields:
+  - `number` (integer).
+  - `street` (string).
+  - `city` (string).
+  - `state` (GraphQL enum).
 
 **Note:** You can choose to return your own details or use mock values.
 
